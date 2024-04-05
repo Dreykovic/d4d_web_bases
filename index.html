@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>D4D</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="lib/media/favicon.jpeg">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+
+
+    <body>
+        <div class="text-container">
+            <div id="texte-auto"></div>
+
+        </div>
+        <div class="center">
+           
+            <div class="menu">
+            
+                <li class="item" id="profile">
+                    <a href="#profile" class="btn"><i class="fa fa-code" aria-hidden="true"></i> Web Bases</a>
+                    <div class="smenu">
+                        <a href="./1.-initiation.html">Commencer</a>
+                        <!-- <a href="">Picture</a> -->
+                    </div>
+                </li>
+                <!-- <li class="item" id="message">
+                <a href="#message" class="btn"> <i class="far fa-envelope" aria-hidden="true"></i> Messages</a>
+                <div class="smenu">
+                    <a href="">new</a>
+                    <a href="">sent</a>
+                    <a href="">spam</a>
+                </div>
+            </li>
+            <li class="item" id="Settings">
+                <a href="#Settings" class="btn"><i class="fas fa-cog" aria-hidden="true"></i> Settings</a>
+                <div class="smenu">
+                    <a href="">Password</a>
+                    <a href="">Language</a>
+                </div>
+            </li>
+            <li class="item" id="logout">
+                <a href="#" class="btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+            </li> -->
+            </div>
+        </div>
+
+
+        <script>
+            // Tableau des phrases
+            var phrases = [
+                "DEV4DIVERSITY",
+                "FORMATION",
+                "WEB"
+            ];
+
+            var indexPhrase = 0;
+
+            // Fonction pour afficher la prochaine phrase
+            function afficherPhraseSuivante() {
+                var texteDiv = document.getElementById("texte-auto");
+                var phraseActuelle = phrases[indexPhrase];
+                var longueurPhrase = phraseActuelle.length;
+
+                texteDiv.textContent = ""; // Effacer le contenu actuel
+
+                // Afficher la phrase lettre par lettre
+                for (var i = 0; i < longueurPhrase; i++) {
+                    setTimeout((function (i) {
+                        return function () {
+                            texteDiv.textContent += phraseActuelle[i];
+                        }
+                    })(i), i * 100); // Ajouter une lettre toutes les 100 millisecondes
+                }
+
+                // Passer à la prochaine phrase après l'affichage complet de la phrase actuelle
+                setTimeout(function () {
+                    indexPhrase = (indexPhrase + 1) % phrases.length;
+                    afficherPhraseSuivante(); // Appeler récursivement pour afficher la phrase suivante
+                }, longueurPhrase * 100 + 1500); // Attendre 1 seconde après l'affichage complet de la phrase
+            }
+
+            // Appeler la fonction pour afficher la première phrase
+            afficherPhraseSuivante();
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./lib/media/favicon.jpeg');
+    background-size: cover; /* Pour ajuster la taille de l'image à la taille de l'écran */
+    background-position: center; /* Pour centrer l'image */
+    /* background: rgb(55, 41, 16);
+    background: radial-gradient(circle, rgba(55, 41, 16, 1) 0%, rgba(0, 0, 0, 1) 100%); */
+    backdrop-filter: blur(20px); /* Filtre de flou */
+    width: 100vw;
+    height: 100vh;
+}
+#texte-auto {
+    text-align: center;
+    color: #C28C2E;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    white-space: nowrap; /* Pour éviter les sauts de ligne inutiles */
+    overflow: hidden; /* Pour cacher le texte qui dépasse */
+    
+    animation: typing 3s steps(40, end); /* Animation pour simuler la frappe */
+}
+
+/* Animation pour simuler la frappe */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-container{
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+}
+
+
+.menu {
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.item {
+    border-top: 1px solid #000;
+    overflow: hidden;
+    background: #C28C2E;
+    color: #222220;
+}
+
+.btn {
+    display: block;
+    padding: 16px 20px;
+    background: #C28C2E;
+    color: #222220;
+    position: relative;
+    font-weight: bold;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: #C28C2E;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.smenu {
+    background: #222220;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.smenu a {
+    color: #C28C2E;
+    display: block;
+    padding: 16px 26px;
+    font-size: 14px;
+    margin: 4px 0;
+    position: relative;
+}
+
+.smenu a:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    background: #C28C2E;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover::before {
+    opacity: 1;
+}
+
+/*#profile:hover .smenu {
+    max-height: 100%;
+}*/
+
+.item:target .smenu {
+    max-height: 10em;
+}

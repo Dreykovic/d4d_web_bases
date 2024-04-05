@@ -1,0 +1,184 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[D4D Web Basis]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.jpeg</url><title>D4D Web Basis</title><link/></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 05 Apr 2024 12:22:55 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 05 Apr 2024 12:22:54 GMT</pubDate><copyright><![CDATA[AMONA Audrey]]></copyright><ttl>60</ttl><dc:creator>AMONA Audrey</dc:creator><item><title><![CDATA[1. Introduction]]></title><description><![CDATA[ 
+ <br><br>Le monde du web aujourd’hui a tellement explosé de manière pour attirer un utilisateur il faut faire design parlant. Heureusement il existe deux technologies très puissante qui nous offre largement cette possibilité sans aucun ajout extérieur.Il ne s’agit ni plus ni moins le HTML5 &amp; le CSS3<br>
+<br>
+Le HTML(HyperText Markup Language) est un langage de balisage.
+
+<br>
+Les CSS, Cascading Style Sheets (feuilles de styles en cascade), servent à mettre en forme des documents web, type page HTML ou XML. 
+
+<br><br>L'objectif principal d'un cours de HTML, CSS et JavaScript est de fournir aux étudiants les compétences nécessaires pour créer des sites web interactifs et esthétiquement attrayants. Cela comprend :<br>
+<br>Comprendre les bases du HTML (HyperText Markup Language) 
+<br>Apprendre à styliser les éléments HTML en utilisant CSS (Cascading Style Sheets).
+<br>Maîtriser les concepts fondamentaux de JavaScript pour rendre les sites web dynamiques.
+<br>Acquérir une compréhension des bonnes pratiques de développement web, y compris l'accessibilité, la compatibilité entre les navigateurs et les normes de codage.
+<br><br><br>Un éditeur de texte est un logiciel informatique conçu pour créer et modifier du texte brut. Contrairement à un traitement de texte qui est souvent utilisé pour la mise en forme et l'édition de documents, un éditeur de texte se concentre uniquement sur la manipulation de texte sans aucune mise en forme complexe.<br>
+Dans notre cours, nous allons utiliser l'éditeur de texte Visual Studio Code*.<br><br>
+<br>Tout d'abord, accédez au site officiel de Visual Studio Code à l'adresse <a rel="noopener" class="external-link" href="https://code.visualstudio.com/download" target="_blank">https://code.visualstudio.com/download</a>.
+<br>Sur la page, cliquez sur le bouton de téléchargement qui correspond à votre système d'exploitation Windows.<br>
+<img alt="codedoxnloadsite.jpeg" src="/codedoxnloadsite.jpeg">
+<br>Une fois le téléchargement terminé, localisez le fichier d'installation .exe dans le dossier de téléchargement de votre ordinateur.<br>
+<img alt="codefinishdownload.png" src="/codefinishdownload.png">
+<br>Double-cliquez sur le fichier d'installation .exe pour démarrer le processus d'installation de Visual Studio Code.
+<br>Suivez les instructions à l'écran. Vous pouvez généralement laisser les options par défaut telles que le dossier d'installation et les paramètres supplémentaires.
+<br>Une fois l'installation terminée, vous devriez trouver un raccourci pour Visual Studio Code sur votre bureau ou dans le menu Démarrer de Windows.
+<br>Cliquez sur le raccourci pour démarrer Visual Studio Code. Au premier lancement, il pourrait y avoir quelques configurations à faire selon vos préférences, comme les paramètres de couleur et les extensions à installer.<br>
+Et voilà ! Vous avez maintenant installé Visual Studio Code sur votre système Windows. Vous pouvez commencer à l'utiliser pour écrire du code, modifier des fichiers texte, et bien plus encore.
+<br><br>Vous devez avoir un navigateur web installé, Mozilla firefox<br>
+<img alt="firefox.png" src="/firefox.png"><br>
+ou Google chrome.<br>
+<img alt="chrome.png" src="/chrome.png"><br><br>Dans un fichier test.html ajouter mes deux lignes<br>
+suivantes :<br>Bonjour le monde du web ,
+je viens d ' arriver !!
+Copier<br>Exécutez le ficher avec votre navigateur en double cliquant sur le ficher.<br>Félicitation !!! Vous venez de créer votre premier site web.]]></description><link>1.-initiation.html</link><guid isPermaLink="false">1. Initiation.md</guid><dc:creator><![CDATA[AMONA Audrey]]></dc:creator><pubDate>Fri, 05 Apr 2024 11:15:46 GMT</pubDate><enclosure url="codedoxnloadsite.jpeg" length="0" type="image/jpeg"/><content:encoded>&lt;figure&gt;&lt;img src="codedoxnloadsite.jpeg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[1. Balises et attributs]]></title><description><![CDATA[ 
+ <br><br><br>
+<br>Eléments principales des pages html
+<br>Celles-ci sont invisibles à l'écran pour vos visiteurs
+<br>Elles permettent à l'ordinateur de comprendre ce qu'il doit afficher
+<br>Les balises se repèrent facilement. Elles sont entourées de &lt; chevrons &gt;, c'est-à-dire des symboles &lt; et &gt;, comme ceci : &lt;balise&gt;
+<br>Elles indiquent la nature du texte qu'elles encadrent. Elles veulent dire par exemple : Ceci est le titre de la page , Ceci est une image   Ceci est un paragraphe de texte  etc.
+<br>On distingue deux types de balises : 
+
+<br>les balises en paires &lt;titre&gt; Un texte&lt;/titre&gt;
+<br>les balises orphelines.&lt;image/&gt; ou &lt;image&gt;
+
+
+<br><br>Les attributs sont les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur, comme ceci :<br>
+&lt;balise attribut="valeur"&gt;<br><br>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;Titre&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+Copier<br>Note
+Vous noterez que les balises s'ouvrent et se ferment dans un ordre précis. Par exemple, la balise &lt;html&gt; est la première que l'on ouvre et c'est aussi la dernière que l'on ferme (tout à la fin du code, avec &lt;/html&gt;). Les balises doivent être fermées dans le sens inverse de leur ouverture. Un exemple :
+
+<br>&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; : correct. Une balise qui est ouverte à l'intérieur d'une autre doit aussi être fermée à l'intérieur.
+<br>&lt;html&gt;&lt;body&gt;&lt;/html&gt;&lt;/body&gt; : incorrect, les balises s'entremêlent.
+
+<br><br>&lt;!DOCTYPE html&gt;<br>
+La toute première ligne s'appelle le doctype. Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML. Ce n'est pas vraiment une balise comme les autres (elle commence par un point d'exclamation). Vous<br>
+pouvez considérer que c'est un peu l'exception qui confrme la règle.<br><br>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;title&gt;Titre&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+Copier<br>C'est la balise principale du code. Elle englobe tout le contenu de votre page.<br>
+Comme vous pouvez le voir, la balise fermante &lt;/html&gt; se trouve tout à la fin du code !<br><br>Une page web est constituée de deux parties :<br>
+<br>L'en-tête &lt;head&gt; : cette section donne quelques informations générales sur la page comme 
+
+<br>son titre, 
+<br>l'encodage (pour la gestion des caractères spéciaux), etc. 
+<br>Cette section est généralement assez courte. 
+<br>Les informations que contient l'en-tête ne sont pas affichées sur la page,
+
+
+<br>Le corps &lt;body&gt; : c'est là que se trouve la partie principale de la page. Tout ce que nous écrirons ici sera affiché à l'écran. C'est à l'intérieur du corps que nous écrirons la majeure partie de notre code.
+<br><br>&lt;meta charset="utf-8" /&gt;<br>
+Cette balise indique l'encodage utilisé dans votre fichier .html.<br>
+Le titre principal de la page: &lt;title&gt;&lt;/title&gt; Le titre ne s'affiche pas dans votre page mais en haut de celle-ci (souvent dans l'onglet du navigateur).<br><br>&lt;!-- Ceci est un commentaire --&gt;<br>
+Vous pouvez le mettre où vous voulez au sein de votre code source : il n'a aucun<br>
+impact sur votre page, mais vous pouvez vous en servir pour vous aider à vous<br>
+repérer dans votre code source (surtout s'il est long).<br><br>Nous allons voir successivement dans cette partie :<br>
+<br>comment rédiger des paragraphes ;
+<br>comment structurer sa page avec les titres ;
+<br>comment donner de l'importance à certains mots de son texte ;
+<br>comment organiser les informations sous forme de listes.
+<br><br>Le langage HTML propose justement la balise &lt;p&gt; pour délimiter les paragraphes.<br>&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;
+Copier<br><br>il existe une balise "Aller à la ligne" ! C'est une balise orpheline qui sert juste à indiquer qu'on doit aller à la ligne : &lt;br/&gt;.<br>&lt;p&gt;
+  123 Rue de l'Exemple&lt;br&gt;
+  Ville Exemple&lt;br&gt;
+  Pays Exemple
+&lt;/p&gt;
+Copier<br><br>En HTML, on est verni, on a le droit d'utiliser six niveaux de titres différents.  On a donc six balises de titres différentes :<br>
+<br>&lt;h1&gt; &lt;/h1&gt; : signifie « titre très important ». En général, on s'en sert pour afficher le titre de la page au début de celle-ci.
+<br>&lt;h2&gt; &lt;/h2&gt; : signifie « titre important ».
+<br>&lt;h3&gt; &lt;/h3&gt; : pareil, c'est un titre un peu moins important (on peut dire un « sous-titre » si vous voulez).
+<br>&lt;h4&gt; &lt;/h4&gt; : titre encore moins important.
+<br>&lt;h5&gt; &lt;/h5&gt; : titre pas important.
+<br>&lt;h6&gt; &lt;/h6&gt; : titre vraiment, mais alors là vraiment pas important du tout.
+<br><br>
+<br>&lt;em&gt; &lt;/em&gt; Mettre un peu en valeur
+<br>&lt;strong&gt;&lt;/strong&gt;: Mettre Beaucoup en valeur.<br>
+Il y'en a plein d'autre. Mais habituellement le CSS est plus utilisé pour la mise en valeur.
+<br><br>Les listes nous permettent souvent de mieux structurer notre texte et d'ordonner nos informations.<br>
+Nous allons découvrir ici deux types de listes :<br>
+<br>les listes non ordonnées ou listes à puces ;
+<br>&lt;ul&gt;
+  &lt;li&gt;Fraises&lt;/li&gt;
+  &lt;li&gt;Framboises&lt;/li&gt;
+  &lt;li&gt;Cerises&lt;/li&gt;
+&lt;/ul&gt;
+Copier<br>
+<br>les listes ordonnées ou listes numérotées ou encore énumérations.
+<br>&lt;ol&gt;
+  &lt;li&gt;Fraises&lt;/li&gt;
+  &lt;li&gt;Framboises&lt;/li&gt;
+  &lt;li&gt;Cerises&lt;/li&gt;
+&lt;/ol&gt;
+Copier<br><br>Pour faire un lien, la balise que nous allons utiliser est très simple à retenir : &lt;a&gt;. Il faut cependant lui ajouter un attribut, href, pour indiquer vers quelle page le lien doit conduire.<br>&lt;a href="https://github.com"&gt;Github&lt;/a&gt;
+&lt;a href="page.html" title="Vers la page"&gt;Github&lt;/a&gt;
+Copier<br><br><br>Pour insérer une image dans une page HTML, nous utilisons la balise &lt;img/&gt;<br>
+C'est une balise de type orpheline (comme &lt;br /&gt;).<br>
+La balise doit être accompagnée de deux attributs obligatoires :<br>
+<br>src : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin<br>
+absolu (ex. : <a rel="noopener" class="external-link" href="http://www.site.com/fleur.png" target="_blank">http://www.site.com/fleur.png</a>), soit mettre le chemin en relatif (ce qu'on fait<br>
+le plus souvent). Ainsi, si votre image est dans un sous-dossier images, vous devrez taper :<br>
+src="images/fleur.png".
+<br>alt : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images. Pour la fleur, on mettrait par exemple : alt="Une fleur".
+<br>Voici un exemple d'insertion d'image :<br>&lt;img src="images/montagne.jpg" alt="Photo de montagne" /&gt;
+Copier<br><br><br>Les tables en HTML sont utilisées pour afficher des données tabulaires, telles que des listes de données, des calendriers, etc. Une table est composée de lignes (éléments &lt;tr&gt;) et de cellules (éléments &lt;td&gt; pour les cellules de données et &lt;th&gt; pour les cellules d'en-tête).<br>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Entête 1&lt;/th&gt;
+      &lt;th&gt;Entête 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Donnée 1&lt;/td&gt;
+      &lt;td&gt;Donnée 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;!-- Ajoutez d'autres lignes et cellules ici --&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+Copier<br><br>
+<br>colspan : Permet de spécifier le nombre de colonnes qu'une cellule devrait occuper.
+<br>Exemple : <br>&lt;td colspan="2"&gt;Cellule occupant deux colonnes&lt;/td&gt;
+
+Copier<br>
+<br>rowspan : Permet de spécifier le nombre de lignes qu'une cellule devrait occuper.
+<br>Exemple :<br>&lt;td rowspan="2"&gt;Cellule occupant deux lignes&lt;/td&gt;
+Copier<br>
+<br>border : Définit l'épaisseur de la bordure autour de la table.
+<br>Exemple :<br>&lt;table border="1"&gt;
+Copier<br><br><br>Les formulaires en HTML sont utilisés pour collecter des informations auprès des utilisateurs. Les formulaires sont constitués d'éléments tels que les zones de texte, les boutons radio, les cases à cocher, les menus déroulants, etc., qui permettent aux utilisateurs d'entrer et de soumettre des données.<br>
+Voici un exemple de structure de base d'un formulaire en HTML :<br>&lt;form action="/action_page.php" method="post"&gt;
+  &lt;label for="fname"&gt;Prénom :&lt;/label&gt;
+  &lt;input type="text" id="fname" name="firstname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label for="lname"&gt;Nom :&lt;/label&gt;
+  &lt;input type="text" id="lname" name="lastname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Envoyer"&gt;
+&lt;/form&gt;
+Copier<br><br>
+<br>action : Spécifie l'URL vers laquelle envoyer les données du formulaire.
+<br>Exemple :<br>&lt;form action="/mon-script.php" method="post"&gt;
+
+Copier<br>
+<br>method : Définit la méthode HTTP à utiliser pour envoyer les données du formulaire. Les valeurs couramment utilisées sont "get" et "post".
+<br>Exemple :<br>&lt;form action="/action_page.php" method="post"&gt;
+
+Copier<br>
+<br>name : Donne un nom à l'élément de formulaire, utilisé pour référencer les données côté serveur.
+<br>Exemple :<br>&lt;input type="text" name="firstname"&gt;
+Copier<br>
+<br>type : Spécifie le type de champ de formulaire. Les valeurs courantes incluent "text", "password", "checkbox", "radio", "submit", "reset", etc.
+<br>Exemple :<br>&lt;input type="text"&gt;
+Copier<br>
+<br>value : Définit la valeur initiale d'un champ de formulaire.
+<br>Exemple :<br>&lt;input type="text" value="Valeur initiale"&gt;
+Copier]]></description><link>2.-html-généralités.html</link><guid isPermaLink="false">2. Html Généralités.md</guid><dc:creator><![CDATA[AMONA Audrey]]></dc:creator><pubDate>Fri, 05 Apr 2024 11:32:23 GMT</pubDate></item></channel></rss>
